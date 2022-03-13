@@ -1,0 +1,60 @@
+.section {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+}
+.topmenu {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.left {
+  display: flex;
+  flex: 0.3;
+  position: relative;
+  justify-content: space-around;
+}
+.right {
+  display: flex;
+  flex: 0.69;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.right img {
+  position: relative;
+  right: 52px;
+}
+.right span {
+  position: relative;
+  right: 43px;
+  /* font-weight: bold; */
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.left span {
+  font-size: 18px;
+  line-height: 21.78px;
+  position: relative;
+}
+
+.left span:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -5px;
+  transition: 250ms;
+  border-radius: 50px;
+}
+.left span:hover:after {
+  width: 100%;
+}
+
